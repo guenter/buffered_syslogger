@@ -1,6 +1,6 @@
 require 'syslog'
 require 'logger'
-require 'active_support/buffered_logger'
+require 'active_support'
 
 class BufferedSyslogger < ActiveSupport::BufferedLogger
   attr_reader :ident, :options, :facility
